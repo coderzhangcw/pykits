@@ -5,11 +5,11 @@ from datetime import datetime
 from dateutil import tz
 
 
-def tz_conversion(str_time, 
-                  original_zone="UTC", 
-                  original_time_format="%Y-%m-%d %H:%M:%S",
-                  out_zone="CST",
-                  out_time_format="%Y-%m-%d %H:%M:%S"):
+def tz_conversion(str_time: str, 
+                  original_zone: str="UTC", 
+                  original_time_format: str="%Y-%m-%d %H:%M:%S",
+                  out_zone: str="CST",
+                  out_time_format: str="%Y-%m-%d %H:%M:%S") -> str:
     """格式化输出北京时间。
     时区: UTC CST
     时间格式: %Y-%m-%d %H:%M:%S   %Y-%m-%dT%H:%M:%S.%fZ
